@@ -59,10 +59,9 @@ sub _compile_sort_schwartz {
 		source      => qq{
 			sub {
 				return
-					map  { \$_->[0] }
+					map  \$_->[0],
 					sort { $sorter{$op} }
-					map  { [ \$_, do $transform ] }
-						\@_;
+					map  [ \$_, do $transform ], \@_;
 			}
 		},
 	);
