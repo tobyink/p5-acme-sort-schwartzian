@@ -4,7 +4,7 @@ use v5.14;
 
 BEGIN {
 	$Acme::Sort::Schwartzian::AUTHORITY = 'cpan:TOBYINK';
-	$Acme::Sort::Schwartzian::VERSION   = '0.001';
+	$Acme::Sort::Schwartzian::VERSION   = '0.002';
 }
 
 use B::Deparse ();

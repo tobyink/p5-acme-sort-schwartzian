@@ -4,3 +4,10 @@
 	issued  2013-07-23;
 	label   "Initial release".
 
+`Acme-Sort-Schwartzian 0.002 cpan:TOBYINK`
+	issued  2013-07-23;
+	changeset [
+		item "Depend on newer version of Eval::TypeTiny which does closures better."^^Update;
+		item "Include example script."^^Addition;
+	].
+
