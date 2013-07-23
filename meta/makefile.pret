@@ -1,0 +1,13 @@
+# This file provides instructions for packaging.
+
+`Acme-Sort-Schwartzian`
+	perl_version_from m`Acme::Sort::Schwartzian`;
+	version_from      m`Acme::Sort::Schwartzian`;
+	readme_from       m`Acme::Sort::Schwartzian`;
+	test_requires     p`Test::More 0.96`;
+	requires          p`Eval::TypeTiny 0.018`;
+	requires          p`PadWalker 1.96`;
+	requires          p`Parse::Keyword 0.01`;
+	requires          p`Exporter::TypeTiny 0.018`;
+	.
+
