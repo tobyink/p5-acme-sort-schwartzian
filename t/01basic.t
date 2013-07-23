@@ -36,28 +36,28 @@ is_deeply(
 	[ reverse qw( baz quux xyzzy foobar ) ]
 );
 
-my $foo = [0];
+my $foo = 0;
 
 is_deeply(
-	[ S { $foo->[0]++; $_ } cmp qw/ foobar baz quux xyzzy / ],
+	[ S { $foo++; $_ } cmp qw/ foobar baz quux xyzzy / ],
 	[ qw( baz foobar quux xyzzy ) ]
 );
 
-is($foo->[0], 4);
+is($foo, 4);
 
 is_deeply(
-	[ S { $foo->[0]++; $_ } -cmp qw/ foobar baz quux xyzzy / ],
+	[ S { $foo++; $_ } -cmp qw/ foobar baz quux xyzzy / ],
 	[ reverse qw( baz foobar quux xyzzy ) ]
 );
 
-is($foo->[0], 8);
+is($foo, 8);
 
 is_deeply(
-	[ S { $foo->[0]++; $_ } qw/ foobar baz quux xyzzy / ],
+	[ S { $foo++; $_ } qw/ foobar baz quux xyzzy / ],
 	[ qw( baz foobar quux xyzzy ) ]
 );
 
-is($foo->[0], 12);
+is($foo, 12);
 
 done_testing;
 

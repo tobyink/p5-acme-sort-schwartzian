@@ -146,15 +146,6 @@ The list is the list of items to be sorted.
 
 =item *
 
-Currently closing over a variable in the key block doesn't work properly.
-You get a copy of the original data, and any modifications to it are not
-visible outside the key block.
-
-If that variable is a scalarref/arrayref/hashref, then you can safely
-mutate the structures pointed to by the reference.
-
-=item *
-
 This module's acronym is ASS.
 
 =back
